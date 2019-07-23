@@ -1,10 +1,17 @@
 {
-  "src_folders" : ["tests"],
-  "output_folder" : "reports",
+  "src_folders" : ["./tests"],
+  "output_folder" : "./reports",
   "custom_commands_path" : "",
   "custom_assertions_path" : "",
-  "page_objects_path" : "pages",
+  "page_objects_path" : "./pages",
   "globals_path" : "",
+  "test_runner" : {
+    "type": "mocha",
+    "options": {
+      "retries": 1,
+      "reporter": "mochawesome"
+       }
+    },
 
   "selenium" : {
     "start_process" : true,
@@ -13,7 +20,7 @@
     "host" : "127.0.0.1",
     "port" : 4444,
     "cli_args" : {
-      "webdriver.chrome.driver" : "bin/chromedriver.exe",
+      "webdriver.chrome.driver" : "bin/chromedriver",
       "webdriver.ie.driver" : "",
       "webdriver.gecko.driver" : "bin/geckodriver"
     }
@@ -21,7 +28,7 @@
 
   "test_settings" : {
     "default" : {
-      "launch_url" : "http://www.baidu.com",
+      "launch_url" : "https://www.baidu.com/",
       "selenium_port"  : 4444,
       "selenium_host"  : "localhost",
       "silent": true,

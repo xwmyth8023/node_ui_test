@@ -1,0 +1,27 @@
+{
+  "name": "nodetest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "nightwatch tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xwmyth8023/nodetest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xwmyth8023/nodetest/issues"
+  },
+  "homepage": "https://github.com/xwmyth8023/nodetest#readme",
+  "dependencies": {
+    "mocha": "^6.2.0",
+    "mochawesome": "^4.0.1",
+    "nightwatch": "^1.1.13"
+  }
+}
